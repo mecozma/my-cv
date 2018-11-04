@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'my-cv';
+  src:
+    url('fonts/my-cv.ttf?49y0ev') format('truetype'),
+    url('fonts/my-cv.woff?49y0ev') format('woff'),
+    url('fonts/my-cv.svg?49y0ev#my-cv') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="my-cv_icon--"], [class*=" my-cv_icon--"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'my-cv' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.my-cv_icon--home:before {
+  content: "\e900";
+}
+.my-cv_icon--map:before {
+  content: "\e94b";
+}
+.my-cv_icon--calendar:before {
+  content: "\e953";
+}
+.my-cv_icon--hammer:before {
+  content: "\e996";
+}
+.my-cv_icon--trophy:before {
+  content: "\e99e";
+}
+.my-cv_icon--briefcase:before {
+  content: "\e9ae";
+}
+.my-cv_icon--airplane:before {
+  content: "\e9af";
+}
+.my-cv_icon--menu:before {
+  content: "\e9bd";
+}
+.my-cv_icon--hipster2:before {
+  content: "\e9fa";
+}
+.my-cv_icon--plus:before {
+  content: "\ea0a";
+}
+.my-cv_icon--info:before {
+  content: "\ea0c";
+}
+.my-cv_icon--google-plus:before {
+  content: "\ea8b";
+}
+.my-cv_icon--facebook:before {
+  content: "\ea90";
+}
+.my-cv_icon--twitter:before {
+  content: "\ea96";
+}
+.my-cv_icon--youtube:before {
+  content: "\ea9d";
+}
+.my-cv_icon--github:before {
+  content: "\eab0";
+}
+.my-cv_icon--wordpress:before {
+  content: "\eab4";
+}
+.my-cv_icon--linkedin2:before {
+  content: "\eaca";
+}
+.my-cv_icon--pinterest:before {
+  content: "\ead1";
+}
+.my-cv_icon--codepen:before {
+  content: "\eae8";
+}
