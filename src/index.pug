@@ -1,6 +1,7 @@
-doctype html
-html
-  head
-  body
-    h1 hello
-    
+extends _component/layout/page
+block cool-config 
+  -
+    var myTitleForGoogleSearch = 'Eduard Cozma CV';
+    var myDescriptionForGoogleSearch = 'This is made to show some of the technologies I can use';
+block awesome-content
+  h1 this is it
