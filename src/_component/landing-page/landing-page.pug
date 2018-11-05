@@ -1,0 +1,21 @@
+-
+  var myFullName = 'Eduard Cozma';
+  var myJobTitle = 'Markup destroyer';
+  var socialList = [
+    {icon: 'github', url: 'https://github.com/mecozma'},
+    {icon: 'codepen', url: 'https://codepen.io/mecozma/'},
+    {icon: 'facebook', url: 'https://www.facebook.com/mecozma'},
+    {icon: 'linkedin2', url: 'https://www.linkedin.com/in/eduardcozma/'},
+    {icon: 'wordpress', url: 'https://mecozma.wordpress.com/'}
+  ]
+#landing-page
+.landing-page
+  .landing-page__wrapper
+    h1.landing-page__name=myFullName
+    //- h1.landing-page__name #{myFullName} --- used if interpolation is needed
+    h2.landing-page__title=myJobTitle
+    ul.landing-page__social
+      for social in socialList
+        li.landing-page__item
+          label.landing-page__label(for="")
+            span(class=`my-cv_icon--${social.icon}`)
