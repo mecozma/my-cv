@@ -1,0 +1,51 @@
+//- Data used to populate the pug template
+-
+  var header = '#about-me'
+  var imagePath = 'asset/image/eduard-cozma-avatar.jpeg'
+  var myFullName = 'Eduard Cozma'
+  var myTitle = 'Markup Destroyer'
+  var slogan =  "Day bay day I'm getting better at debugging. In the end I will find you and"
+  var achievement = {
+    title: 'title goes here',
+    content: 'content goes here'
+  }
+  var coolStuff = {
+    title: "Cool Stuff Title",
+    buttonList: [
+      {
+        url: 'https://github.com/mecozma/my-cv',
+        icon: 'github',
+        label: 'Click here to visit the Github project source'
+      },
+      {
+        url: '',
+        icon: '',
+        label: ''
+      },
+      {
+        url: '',
+        icon: '',
+        label: ''
+      }
+    ]
+  }
+
+//- Pug template populated with data(the view)
+#about-me
+.about-me
+  .about-me__header-header
+  .about-me__avatar-wrapper
+    img.about-me__avatar(src=imagePath)
+  .about-me__full-name=myFullName
+  .about-me__full-title=myTitle
+  .about-me__slogan=slogan
+
+  .about-me__title=achievement.title
+  .about-me__content=achievement.content
+
+  .about-me__title=coolStuff.title
+  .about-me__link-list
+    each button in coolStuff.buttonList
+      a(href=button.url)
+        span=button.label
+        span(class=`.my-cv_icon--${button.icon}`)
