@@ -1,13 +1,11 @@
 .about-me {
-  background-image: linear-gradient(135deg, orange, orange 60%, cyan); 
+  background-image: linear-gradient(135deg, $color-orange, $color-orange 60%, $color-cyan); 
   line-height: 1.5;
 }
 
 .about-me__header {
-  color: white;
-  padding: 1rem 2rem;
-  margin-bottom: 1rem;
-  font-size: 4rem;
+  color: $color-white;
+  @extend %header;
 }
 
 .about-me__avatar-wrapper {
@@ -30,7 +28,7 @@
 
 .about-me__avatar {
   width: 100%;
-  border: 0.5rem solid orange;
+  border: 0.5rem solid $color-orange;
   border-radius: 5%;
 }
 
@@ -44,7 +42,7 @@
 
 .about-me__full-name,
 .about-me__title {
-  color: white;
+  color: $color-white;
   padding: 0 1rem 2rem;
   text-align: center;
 }
@@ -68,7 +66,7 @@
   border: 0.2rem solid rgba(255,255,255,.3);
   border-radius: 0.5rem;
   margin: 1rem auto;
-  background-color: white;
+  background-color: $color-white;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
