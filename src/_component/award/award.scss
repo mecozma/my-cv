@@ -2,3 +2,52 @@
   color: white;
   @extend %header;
 }
+
+.award__card {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  border-bottom: 0.1rem solid $color-fiord;
+    &>div {
+      border-top: 0.1rem solid $color-fiord;
+
+      }
+
+      .award__card-icon {
+        width: 25%;
+        font-size: 2.5rem;
+        padding: 2.5rem;
+        color: $color-white;
+      }
+
+      &>div:nth-child(even) {
+        display: flex;
+        align-items: center;
+        width: 75%;
+        padding: 0 1rem;
+      }
+
+      &>div:nth-child(1) {
+        background-color: $color-amethyst-smoke;
+      }
+      &>div:nth-child(3) {
+        background-color: $color-blue-bell;
+      }
+      &>div:nth-child(4) {
+        font-style: italic;
+      }
+      &>div:nth-child(5) {
+        background-color: $color-bouquet;
+      }
+      &>div:nth-child(7) {
+        background-color: $color-can-can
+      }
+}
+
+
+
+.award__card-title {
+  font-weight: bold;
+}
