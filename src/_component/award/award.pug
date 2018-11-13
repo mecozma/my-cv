@@ -1,5 +1,42 @@
 -
   var awardHeader = '#awards'
+  var awardList = [
+    {
+    title: 'Title text here',
+    description: 'Description text, here',
+    location: 'Location te,xt here',
+    date: 'Date text here'
+  },
+  {
+    title: 'Title text here',
+    description: 'Description text, here',
+    location: 'Location te,xt here',
+    date: 'Date text here'
+  },
+  {
+    title: 'Title text here',
+    description: 'Description text, here',
+    location: 'Location te,xt here',
+    date: 'Date text here'
+  }
+  ]
 #award
 .award
   .award__header=awardHeader
+  each award in awardList
+    .award__card
+      .award__icon
+        span.my-cv_icon--trophy
+      .award__card-title=award.title
+
+      .award__icon
+        span.my-cv_icon--info
+      .award__card-description=award.description
+
+      .award__icon
+        span.my-cv_icon--map
+      .award__card-location=award.location
+
+      .award__icon
+        span.my-cv_icon--calendar
+      .award__card-date=award.date
