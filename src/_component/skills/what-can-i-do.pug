@@ -31,7 +31,8 @@
   .what-i-can-do__header=header
   each whatICanDo in whatICanDoList
     .what-i-can-do__title=whatICanDo.title
-    each skill in whatICanDo.skillList
-      .what-i-can-do__skill=skill
+    .what-i-can-do__list
+      each skill in whatICanDo.skillList
+        .what-i-can-do__skill=skill
       
 

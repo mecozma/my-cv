@@ -1,4 +1,28 @@
-.what {
-  color: red;
+.what-i-can-do__header {
+  color: $color-black;
+  @extend %header;
+}
+      
+.what-i-can-do__title {
+  color: $color-bouquet;
+  text-align: center;
   font-size: 3rem;
+  padding: 1rem;
+}
+
+.what-i-can-do__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.what-i-can-do__skill {
+  border: 0.1rem solid $color-fiord;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  margin: 0.3rem;
+  width: 15%;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 1.5rem;
 }
