@@ -1,0 +1,37 @@
+//- the data, the model
+-
+  var header = "What I can do";
+  var whatICanDoList = [
+    {
+      title: 'Front end',
+      skillList: [
+        'CSS3',
+        'Bootstrap',
+        'HTML5',
+        'JavaScript',
+        'jQuerry',
+        'React'
+      ]
+    },
+    {
+      title: 'Back end',
+      skillList: [
+        'Node.js',
+        'Express.js',
+        'Mongo.db',
+        'Mongoose'
+      ]
+    }
+  ]
+
+//- the presentation, the view
+
+#what-i-can-do
+.what-i-can-do
+  .what-i-can-do__header=header
+  each whatICanDo in whatICanDoList
+    .what-i-can-do__title=whatICanDo.title
+    each skill in whatICanDo.skillList
+      .what-i-can-do__skill=skill
+      
+
