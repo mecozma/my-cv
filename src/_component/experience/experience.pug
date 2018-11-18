@@ -1,6 +1,6 @@
 //- model/data
 -
-  var header = 'experience';
+  var header = 'Experience';
   var experienceList = [
     {
       title: "Job title",
@@ -30,15 +30,18 @@
 #experience
 .experience
   .experience__header=header
-    input(type="radio", name="experience", id="default")
-    label(for="default") &times;
-    each experience, key in experienceList
-      input.experience__input(type="radio", name="experience", id=`experience-id-${key}`)
-      label.experience__title(for=`experience-id-${key}`)=experience.title
-      .experience__details
-        .experience__top
-          .experience__date=experience.date
-          .experience__company=experience.company
-        .experience__list
-          each responsability in experience.responsabilityList
-            .experience__responsability=responsability
+  input.experience__input(type="radio", name="experience", id="default")
+  //- label(for="default") &times;
+  each experience, key in experienceList
+    input.experience__input(type="radio", name="experience", id=`experience-id-${key}`)
+    label.experience__title(for=`experience-id-${key}`)
+      | #{experience.title}
+      label(for="default")
+        span.my-cv_icon--plus
+    .experience__details
+      .experience__top
+        .experience__date=experience.date
+        .experience__company=experience.company
+      .experience__list
+        each responsability in experience.responsabilityList
+          .experience__responsability=responsability
