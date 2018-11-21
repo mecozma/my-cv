@@ -1,15 +1,13 @@
 //- data
 -
-  var header = "Recent clientsdsdfa'sldfja'sldjf";
+  var header = "Recent clients";
   var clientsList = [
-    'asset/image/clients/eduard-cozma-avatar.jpeg',
-    'asset/image/clients/picker_logo.jpg'
+    'asset/image/clients/picker-logo.JPG'
   ];
 //- model
 #clients
 .clients
   .clients__header=header
   .clients__list
-    img(src='asset/image/clients/picker_logo.JPG')
     each client in clientsList
       img(src=client)

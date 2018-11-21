@@ -1,0 +1,35 @@
+.menu {
+  padding: 2rem;
+  background-color: $color-white;
+  position: relative;
+}
+
+.menu__list {
+  border: 0.1rem solid $color-can-can;
+  border-radius: 0.5rem;
+}
+
+.menu__link {
+  display: block;
+  padding: 1rem;
+  font-size: 2.5rem;
+  color: $color-fiord;
+  text-decoration: none;
+  border-bottom: 0.1rem solid $color-black;
+
+  &:last-child {
+    border: 0;
+  }
+}
+
+.menu__go-to {
+  background-color: $color-can-can;
+  color: $color-black;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-size: 3rem;
+  padding: 1em;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
